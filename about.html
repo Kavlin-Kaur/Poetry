@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Poetry by Kavlin Kaur</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-container">
+    <!-- Decorative elements -->
+    <div class="decorative-circle circle-1"></div>
+    <div class="decorative-circle circle-2"></div>
+    
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Kavlin Kaur</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Poems</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="about-section">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="about-content">
+                <h1>About the Poet</h1>
+                <div class="divider">
+                  <span class="divider-line"></span>
+                  <span class="divider-icon"><i class="bi bi-flower3"></i></span>
+                  <span class="divider-line"></span>
+                </div>
+                
+                <div class="about-image">
+                  <img src="https://via.placeholder.com/300x300" alt="Kavlin Kaur" class="img-fluid rounded-circle">
+                </div>
+                
+                <div class="about-text">
+                  <p>
+                    I am Kavlin Kaur, a poet who lives between two worlds—one of ambition and one of tranquility. 
+                    My poetry is a reflection of this duality, capturing the storm and stillness that coexist within us all.
+                  </p>
+                  <p>
+                    Through my words, I explore the depths of human emotion—from grief and heartache to longing and hope. 
+                    Each poem is a fragment of my journey, a piece of my soul laid bare on the page.
+                  </p>
+                  <p>
+                    Poetry has been my sanctuary, my voice when words spoken aloud failed me. 
+                    It has been my companion through life's ebbs and flows, a constant in a world of change.
+                  </p>
+                  <p>
+                    I share these poems with you in the hope that they might resonate, that they might offer comfort 
+                    or understanding, or simply a moment of connection in this vast, often disconnected world.
+                  </p>
+                </div>
+                
+                <div class="text-center mt-5">
+                  <a href="contact.html" class="btn btn-outline-primary">Get in Touch</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container text-center">
+        <div class="divider mb-4">
+          <span class="divider-line"></span>
+          <span class="divider-icon"><i class="bi bi-flower3"></i></span>
+          <span class="divider-line"></span>
+        </div>
+        <p>&copy; <span id="current-year"></span> Poetry by Kavlin Kaur</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Set current year
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+

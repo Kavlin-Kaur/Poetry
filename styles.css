@@ -1,0 +1,564 @@
+/* 
+  Poetry by Kavlin Kaur - Boho-inspired Styles
+  A beautiful, accessible poetry website with boho vibes
+*/
+
+/* ===== Base Styles ===== */
+:root {
+    /* Boho-inspired color palette */
+    --color-background: #fdf6ec;
+    --color-text: #5d4037;
+    --color-primary: #a87c5b;
+    --color-secondary: #c17c74;
+    --color-accent: #5e8b7e;
+    --color-light: #f8efe6;
+    --color-muted: #9c8178;
+  
+    /* Font families */
+    --font-heading: "Cormorant Garamond", serif;
+    --font-body: "Poppins", sans-serif;
+  
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 3rem;
+    --spacing-xl: 5rem;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: var(--font-body);
+    font-weight: 300;
+    color: var(--color-text);
+    background-color: var(--color-background);
+    line-height: 1.6;
+    overflow-x: hidden;
+    position: relative;
+  }
+  
+  .page-container {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* ===== Typography ===== */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  h1 {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  p {
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  a:hover {
+    color: var(--color-secondary);
+  }
+  
+  /* ===== Layout Components ===== */
+  
+  /* Header & Navigation */
+  header {
+    padding: var(--spacing-sm) 0;
+    background-color: transparent;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .navbar {
+    padding: var(--spacing-sm) 0;
+  }
+  
+  .navbar-brand {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--color-primary);
+  }
+  
+  .navbar-brand:hover {
+    color: var(--color-secondary);
+  }
+  
+  .nav-link {
+    color: var(--color-text);
+    font-weight: 400;
+    margin: 0 var(--spacing-xs);
+    position: relative;
+    padding: 0.5rem 0.75rem !important;
+  }
+  
+  .nav-link:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-secondary);
+    transition: width 0.3s ease;
+  }
+  
+  .nav-link:hover:after,
+  .nav-link.active:after {
+    width: 100%;
+  }
+  
+  .nav-link:hover,
+  .nav-link.active {
+    color: var(--color-secondary);
+  }
+  
+  /* Hero Section */
+  .hero {
+    padding: var(--spacing-xl) 0 var(--spacing-lg);
+    text-align: center;
+    position: relative;
+  }
+  
+  .hero h1 {
+    margin-bottom: var(--spacing-xs);
+    animation: fadeInDown 1s ease-out;
+  }
+  
+  .subtitle {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    color: var(--color-muted);
+    margin-bottom: var(--spacing-md);
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  /* Dividers */
+  .divider {
+    display: flex;
+    align-items: center;
+    margin: var(--spacing-md) 0;
+    animation: fadeIn 1.5s ease-out;
+  }
+  
+  .divider-line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: var(--color-primary);
+    opacity: 0.3;
+  }
+  
+  .divider-icon {
+    padding: 0 var(--spacing-sm);
+    color: var(--color-primary);
+    font-size: 1.2rem;
+  }
+  
+  /* Poem Cards */
+  .poems-section {
+    padding: var(--spacing-md) 0 var(--spacing-xl);
+  }
+  
+  .poem-card {
+    background-color: var(--color-light);
+    border-radius: 8px;
+    padding: var(--spacing-md);
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+  }
+  
+  .poem-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .poem-card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 0;
+    background-color: var(--color-secondary);
+    transition: height 0.3s ease;
+  }
+  
+  .poem-card:hover:before {
+    height: 100%;
+  }
+  
+  .poem-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-primary);
+  }
+  
+  .poem-preview {
+    color: var(--color-muted);
+    margin-bottom: var(--spacing-sm);
+    font-style: italic;
+    font-family: var(--font-heading);
+  }
+  
+  .read-more {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    color: var(--color-secondary);
+  }
+  
+  .read-more i {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .read-more:hover i {
+    transform: translateX(5px);
+  }
+  
+  /* Poem Detail Page */
+  .poem-detail-section {
+    padding: var(--spacing-lg) 0 var(--spacing-xl);
+  }
+  
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+    font-weight: 500;
+  }
+  
+  .back-link i {
+    margin-right: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .back-link:hover i {
+    transform: translateX(-5px);
+  }
+  
+  .poem-container {
+    background-color: var(--color-light);
+    border-radius: 8px;
+    padding: var(--spacing-lg);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .poem-container h1 {
+    text-align: center;
+    margin-bottom: var(--spacing-xs);
+  }
+  
+  .poem-text {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin: var(--spacing-md) 0;
+  }
+  
+  .poem-signature {
+    text-align: right;
+    font-style: italic;
+    color: var(--color-muted);
+    font-family: var(--font-heading);
+    margin-top: var(--spacing-md);
+  }
+  
+  /* About Page */
+  .about-section {
+    padding: var(--spacing-lg) 0 var(--spacing-xl);
+  }
+  
+  .about-content {
+    background-color: var(--color-light);
+    border-radius: 8px;
+    padding: var(--spacing-lg);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .about-content h1 {
+    text-align: center;
+  }
+  
+  .about-image {
+    text-align: center;
+    margin: var(--spacing-md) 0;
+  }
+  
+  .about-image img {
+    max-width: 200px;
+    border: 5px solid white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-text {
+    font-size: 1.1rem;
+  }
+  
+  /* Contact Page */
+  .contact-section {
+    padding: var(--spacing-lg) 0 var(--spacing-xl);
+  }
+  
+  .contact-content {
+    background-color: var(--color-light);
+    border-radius: 8px;
+    padding: var(--spacing-lg);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .contact-content h1 {
+    text-align: center;
+  }
+  
+  .contact-intro {
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-muted);
+  }
+  
+  .form-control {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.75rem;
+    font-family: var(--font-body);
+  }
+  
+  .form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(168, 124, 91, 0.25);
+    border-color: var(--color-primary);
+  }
+  
+  /* Error Page */
+  .error-section {
+    padding: var(--spacing-xl) 0;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+  }
+  
+  .error-content {
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .error-content h1 {
+    font-size: 5rem;
+    color: var(--color-secondary);
+    margin-bottom: 0;
+  }
+  
+  /* Footer */
+  footer {
+    padding: var(--spacing-md) 0;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .social-links {
+    margin-top: var(--spacing-sm);
+  }
+  
+  .social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--color-light);
+    color: var(--color-primary);
+    margin: 0 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    background-color: var(--color-primary);
+    color: white;
+    transform: translateY(-3px);
+  }
+  
+  /* ===== Buttons ===== */
+  .btn {
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-outline-primary {
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+  }
+  
+  .btn-outline-primary:hover {
+    background-color: var(--color-primary);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* ===== Decorative Elements ===== */
+  .decorative-circle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.1;
+    z-index: 0;
+  }
+  
+  .circle-1 {
+    width: 400px;
+    height: 400px;
+    background-color: var(--color-secondary);
+    top: -200px;
+    right: -200px;
+  }
+  
+  .circle-2 {
+    width: 300px;
+    height: 300px;
+    background-color: var(--color-accent);
+    bottom: -150px;
+    left: -150px;
+  }
+  
+  /* ===== Animations ===== */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* ===== Responsive Styles ===== */
+  @media (max-width: 991.98px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+  
+    .navbar-collapse {
+      background-color: var(--color-light);
+      padding: 1rem;
+      border-radius: 8px;
+      margin-top: 1rem;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+  
+    .poem-container,
+    .about-content,
+    .contact-content {
+      padding: var(--spacing-md);
+    }
+  }
+  
+  @media (max-width: 767.98px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .hero {
+      padding: var(--spacing-md) 0;
+    }
+  
+    .poem-text {
+      font-size: 1.1rem;
+    }
+  }
+  
+  /* ===== Accessibility ===== */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+  
+  :focus {
+    outline: 3px solid rgba(168, 124, 91, 0.5);
+    outline-offset: 2px;
+  }
+  
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
+  
+  :focus-visible {
+    outline: 3px solid rgba(168, 124, 91, 0.5);
+    outline-offset: 2px;
+  }
+  
+  
