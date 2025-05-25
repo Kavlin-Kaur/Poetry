@@ -12,7 +12,7 @@ Some raw, some refined—but all straight from the soul.
 ## 🛠️ Tech Side?
 - Written & managed on GitHub  
 - Markdown powered  
-- 100% heart  
+  
 
 
 ~ Kavlin Kaur
