@@ -23,6 +23,52 @@ const poems = [
   To live freely, yet with depth, to chase ambition while finding tranquility in this ebb`
     },
     {
+      title: "Is It Wrong or Is It Right?",
+      slug: "is-it-wrong-or-is-it-right",
+      content: `Looking all around the world  
+    One might believe we're truly lost,  
+    In battles that come at a bitter cost.  
+    
+    Is it wrong? Is it right?  
+    To strike the dark and praise the light?  
+    If justice hunts the parasite,  
+    Then punishment—shouldn’t it be just, not spite?  
+    
+    They say war is cursed, they condemn it loud,  
+    But when pushed, even peace wears a shroud.  
+    I'm not cheering for the bombs or guns,  
+    Not for the fallen fathers, daughters, sons.  
+    
+    I don’t stand with the war cries,  
+    Nor the trauma in children’s eyes.  
+    But I do believe, with all my might,  
+    The wrong must fall, and the right earn light.  
+    
+    Let justice roar, not missiles in skies—  
+    Let truth stand tall where the innocent cries.  
+    I don't want drama. I don't want hate.  
+    I just want time to rewind the fate.  
+    
+    I want my heart to rise, not sink,  
+    No more nights on the fearful brink.  
+    No more mornings filled with dread,  
+    Wondering who’s alive, who’s dead.  
+    
+    I trust my soldiers, my nation’s might,  
+    Their courage gleams in darkest night.  
+    But even the brave, in duty grand,  
+    Can’t stop what slips from human hands.  
+    
+    So I pray, not for vengeance, but for grace,  
+    To wake each day, and see their face.  
+    To hold to peace, not in fear, but pride—  
+    With no more blood in morning tide.  
+    
+    Let the world heal, let the rage cease,  
+    I ask not for war… I just ask for peace.`
+    },
+    
+    {
       title: "A Girl Like Binary Sort",
       slug: "a-girl-like-binary-sort",
       content: `A girl like binary sort  
