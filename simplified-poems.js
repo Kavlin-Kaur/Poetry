@@ -1,0 +1,255 @@
+// Simplified Poems Data - No Backend Required
+const poems = [
+    {
+        title: "Two Parallel Worlds",
+        slug: "two-parallel-worlds",
+        content: `Living in two parallel worlds, perhaps there was a verse
+A verse that only my heart could find, and the one that my mind denied.
+Two worlds, two minds, two hearts, and yet, they intertwine.
+
+A city girl blinded by her dreams, rushing through the streets beneath the daylight's beam,
+A countryside girl, living a still life, with nothing but the love that abides.
+A life full of ambition, or a life full of soul
+How can I balance them both?
+
+A girl who desires nothing but independence, to stand on her own,
+And a girl who seeks nothing but the warmth of the sun, to forget the world's wrongs.
+A girl who craves adventure, who loves the thrill,
+While another seeks nothing but stillness in the hills.
+
+Maybe I want more. Maybe I long for something that calms my soul,
+A place where both dreams and peace can coexist.
+Is it too much to ask for a life that encompasses all of this?
+To live freely, yet with depth, to chase ambition while finding tranquility in this ebb
+
+~Kavlin Kaur`
+    },
+    {
+        title: "Is It Wrong or Is It Right?",
+        slug: "is-it-wrong-or-is-it-right",
+        content: `Looking all around the world  
+One might believe we're truly lost,  
+In battles that come at a bitter cost.  
+
+Is it wrong? Is it right?  
+To strike the dark and praise the light?  
+If justice hunts the parasite,  
+Then punishment shouldn't it be just, not spite?  
+
+They say war is cursed, they condemn it loud,  
+But when pushed, even peace wears a shroud.  
+I'm not cheering for the bombs or guns,  
+Not for the fallen fathers, daughters, sons.  
+
+I don't stand with the war cries,  
+Nor the trauma in children's eyes.  
+But I do believe, with all my might,  
+The wrong must fall, and the right earn light.  
+
+Let justice roar, not missiles in skies  
+Let truth stand tall where the innocent cries.  
+I don't want drama. I don't want hate.  
+I just want time to rewind the fate.  
+
+I want my heart to rise, not sink,  
+No more nights on the fearful brink.  
+No more mornings filled with dread,  
+Wondering who's alive, who's dead.  
+
+I trust my soldiers, my nation's might,  
+Their courage gleams in darkest night.  
+But even the brave, in duty grand,  
+Can't stop what slips from human hands.  
+
+So I pray, not for vengeance, but for grace,  
+To wake each day, and see their face.  
+To hold to peace, not in fear, but pride  
+With no more blood in morning tide.  
+
+Let the world heal, let the rage cease,  
+I ask not for war… I just ask for peace.
+
+~Kavlin Kaur`
+    },
+    {
+        title: "A Girl Like Binary Sort",
+        slug: "a-girl-like-binary-sort",
+        content: `A girl like binary sort  
+But one you'll never solve.  
+For as you try to fix the code,  
+You'll wish you'd never got involved.  
+
+As complex as the depths of DSA,  
+My thoughts don't stay just one way.  
+Who was I? What was I not?  
+Fighting battles with every thought.  
+
+Unique like my name, my stream of mind,  
+Not someone you'll ever define.  
+You can trace me like a company's tree,  
+But wait until you truly see.  
+One by one, my steps unfold,  
+You like me for a bit, but never the whole.  
+
+Debug won't help, not this time.  
+Error logs scream louder than rhyme.  
+And still...  
+These lungs, they keep me awake  
+A heartbeat I can no longer fake.
+
+~Kavlin Kaur`
+    },
+    {
+        title: "Grief",
+        slug: "grief",
+        content: `The nights were heavy with tears of the past,
+Was it the love we shared or the shadow that we cast?
+I wasn't all right, and you weren't all wrong,
+Perhaps we both fought battles unknown all along.
+
+Our youthful years, laced with sorrow and strain,
+Maybe I wasn't enough, or you felt no chain.
+You gave her the place where I longed to be
+How could you choose her, forgetting me?
+
+I gasped for air beneath heartache's tide,
+I forgave you once, then twice but you lied.
+Your words and your actions never aligned,
+And slowly, love faded from my heart and mind.
+
+What we once were, we can never be,
+My heart now carries those scars silently.
+Yet somehow, it longs for the you that I knew
+A ghost of a love that never stayed true.
+
+Years have passed, and life moves on,
+But deep in my chest, the ache lingers on.
+
+~Kavlin Kaur`
+    },
+    {
+        title: "I'll Bloom Anyway",
+        slug: "ill-bloom-anyway",
+        content: `Bottled-up emotions of despair and agony,  
+They whisper loud in this quiet cacophony.  
+Is it fine for me to stay in this ebony?  
+A darkness I wear like it's a part of me.  
+
+Words like resilience and fleeting felicity  
+Crack under the weight of my own anxiety.  
+Hope slips through fingers too tired to fight,  
+Yet I keep walking through the absence of light.  
+
+I don't reach out, I don't complain,  
+I carry the silence, I carry the pain.  
+Maybe the world won't notice I stayed,  
+But I'll bloom in the cracks where I once decayed...
+
+~Kavlin Kaur`
+    },
+    {
+        title: "Storm of Wrath",
+        slug: "storm-of-wrath",
+        content: `My mind was in a storm of wrath
+For everything he did, everything he brought.
+Maybe I was weak,
+Maybe I was wrecked,
+But didn't I say
+Being with me would only bring havoc?
+
+~Kavlin Kaur`
+    },
+    {
+        title: "Unloved",
+        slug: "unloved",
+        content: `Maybe it wasn't me maybe it was the hurt in me.  
+Love never came easy, not sure why,  
+Was it my childhood or our last goodbye?
+
+Maybe it was my story left half-told,  
+Or the way I broke before I got to hold.  
+Fear grew loud and took over the good,  
+My doubts ruined more than I ever understood.
+
+Every time something came close to that pain,  
+I panicked, overthought, started the same game.  
+Loving and leaving, leaving and loving was all just the same,  
+It made me panic to my stomach, the patterns that repeat.
+
+How should I behave? What shouldn't I repeat?  
+Thoughts crept in my mind, and when I had the courage  
+To speak my heart they waved their goodbyes.  
+People came, they stayed, they saw, they ran.
+
+What should I do? How should I process?  
+Was I a maniac, or was I too hard to impress?  
+How do I make them see that I was trying my best?  
+Maybe love was never meant for this maniac.
+
+~Kavlin Kaur`
+    },
+    {
+        title: "Maybe This Is Alright",
+        slug: "maybe-this-is-alright",
+        content: `My sanity just got disrupted  
+Something inside my heart was irrupted  
+Filled with rage and vengeance,  
+Mere words played their cruel sentence  
+
+Detesting the company of my peer, but  
+sometimes I wish someone was here  
+Became a confidant to many,  
+yet desolation was my only company  
+
+Pondering over the things I can't get right  
+All messed up deep inside  
+Maybe this is insane, maybe this is alright  
+Deep down, I wish I was doing this life right...
+
+~Kavlin Kaur`
+    },
+    {
+        title: "Calling You",
+        slug: "calling-you",
+        content: `I'm calling you, but you're not there,
+The phone rings empty in the air.
+Maybe you're busy, maybe you're gone,
+But I still hope you'll call back soon.
+
+The silence echoes in my ear,
+A reminder that you're not near.
+I miss your voice, I miss your laugh,
+I miss the way you made me feel safe.
+
+So I'll keep calling, day and night,
+Hoping that you'll pick up the line.
+Because in this world of uncertainty,
+Your voice is my only certainty.
+
+~Kavlin Kaur`
+    },
+    {
+        title: "Toxic",
+        slug: "toxic",
+        content: `A word we toss, like stones in streams "You're toxic," we often say and believe 
+We label others with sharp disdain,
+Blind to the shadows of our own pain.
+The first true act of poison's trace
+Is calling out another's face. 
+Each of us wears a fractured mask,
+Hiding hurt behind every task.
+It's not always envy, not always pain
+Sometimes it's just empathy that we slains. 
+And yet, when I asked, "What's their and mine 
+They won't even matter in a couple of time
+But still, I wish them healing, in infinite ways.
+Even if I don't like you, I won't cast blame,
+Nor call you "toxic" in a careless name. 
+I'd rather pause, try to retain 
+Reach for your truth with an open hand.
+For toxic, it's not you it's not me it's us i exclaim 
+For it lives in all of us i blame
+
+~Kavlin Kaur`
+    }
+]; 
